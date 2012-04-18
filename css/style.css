@@ -1,0 +1,491 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	outline : none;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin : 0;
+	padding : 0;
+	border : 0;
+	outline : 0;
+	font-size : 100%;
+	vertical-align : baseline;
+	background : transparent;
+}
+ul {
+	list-style : none;
+}
+li{
+	list-style:none;	
+}
+a, a:hover {
+	outline : none;
+	text-decoration : none;
+}
+img {
+	border : none;
+}
+
+/*--------------------------------------------------------- END OF SMALL RESET ---------------------------------------------------------*/	
+
+
+/*--------------------------------------------------------- BASIC ELEMENT STYLES ---------------------------------------------------------*/	
+
+p,blockquote{
+	margin:15px 0 15px 0;
+	color:#636363;
+	line-height:22px;
+	font-size:13px;
+	text-shadow:0 1px #fff;
+}
+.cntdivider{
+	margin: 15px 0 15px 0;
+	height:0;	
+	border-top: 1px solid #d5d5d5;
+	border-bottom: 1px solid #fff;
+}
+.marg{
+	margin:15px 0 0 0;	
+}
+.no-padding{
+	padding:0;	
+}
+blockquote{
+	background:url(../images/blockquote.png) transparent scroll 0 5px no-repeat;
+	padding-left:35px;
+	font-style:italic;
+}
+p img {	/*Position for E-book Image*/
+    float: left;
+}
+
+p img.left {
+    float: left;
+	margin:0 20px 0 0;
+}
+.script{ /*Javascript enable and disable*/
+	display:none;	
+}
+
+/*--------------------------------------------------------- END OF BASIC ELEMENT STYLES ---------------------------------------------------------*/	
+
+body{
+	background:#f4f4f4;
+	font-family:Arial, Helvetica, sans-serif;
+	line-height:1.7;
+	font-size:13px;
+	font-weight:normal;
+}
+
+/*--------------------------------------------------------- HEADER SECTION ---------------------------------------------------------*/	
+
+
+.header_background{
+	background:#f1f1f1 url('../images/pattern1.jpg');
+	margin:0 0 30px 0;
+	padding:0 0 30px 0;
+	border-bottom:1px solid #fff;
+}
+.header_top_background{
+	background:#272727 url('../images/header_pattern.jpg');
+	padding:30px 0 30px 0;
+	margin:0 0 30px 0;
+	border-bottom:1px solid #fff;
+}
+h1 a{
+	background:url('../images/logo.png') no-repeat scroll 0 0 transparent;/*LOGO IMG URL*/
+	display:block;
+	text-indent:-9999px;
+	width:259px;
+	height:75px;
+}
+
+#phone-number{
+	font-size:30px;
+	line-height:20px;
+	padding:40px 0 0px 0;
+	color:#fff;
+	text-shadow:0 1px #fff;
+	float:right;
+}
+#product_container {
+	/*video embed container*/
+	background:#fff;
+	border:1px solid #f2f2f2;
+	height : 250px;
+	position:relative;
+}
+.product_highlight_container {
+	line-height : 0;
+	padding : 9px;
+}
+.product_highlight_shadow {
+	background:url('../assets/shadow/shadow.png') no-repeat scroll 0 0 transparent;
+	height : 31px;
+	width : 940px;
+	bottom : -31px;
+	position : absolute;
+}
+.product_highlight_shadow_half {/*HALF CONTAINER */
+	background:url('../assets/shadow/shadow-half.png') no-repeat scroll 0 0 transparent;
+	height : 23px;
+	width : 460px;
+	bottom : -23px;
+	position : absolute;
+}
+.rotator-content p{/*HEADER ROTATOR STYLES FOR PARAGRAPH*/
+	color:#636363;
+	line-height:22px;
+	font-size:14px;
+	text-shadow:0 1px #fff;
+}
+h2{
+	font-size:36px;
+	margin-top:10px;
+	color:#0a0a0a;
+	text-shadow:0 1px #fff;	
+}
+h2 span{
+	color:#bd36b2;	
+}
+a.button{	/*Rotator Buttons*/
+	display:inline-block;
+	width:200px;
+	line-height:18px;
+	margin:0 20px 0 0 ;
+	text-align:center;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:19px;
+	padding:16px 0 16px 0;
+	font-weight:bold;
+	color:#dddddd;
+}
+
+a.button:hover{
+	color:#f9f9f9;
+}
+a.grey{
+	background:url('../images/button-1.png') no-repeat;
+}
+a.blue{
+	background:url('../images/button-1.png') no-repeat 0 -52px;	
+}
+h3{
+	color:#0a0a0a;
+	font-size:24px;
+	line-height:23px;
+	padding:16px 0 16px 60px;
+	text-shadow:0 1px  #fff;
+}
+h3 span{
+	color:#bd36b2;
+	/*color:#1a8bc6;*/
+}
+
+/*--------------------------------------------------------- END OF HEADER SECTION ---------------------------------------------------------*/	
+
+
+/*--------------------------------------------------------- FEATURES ICONS ---------------------------------------------------------*/	
+
+.step-one{
+	background:url('../images/step-1.png') no-repeat scroll 0 0 transparent;	
+}
+
+.step-two{
+	background:url('../images/step-2.png') no-repeat scroll 0 0 transparent;	
+}
+
+.step-three{
+	background:url('../images/step-3.png') no-repeat scroll 0 0 transparent;	
+}
+
+/*--------------------------------------------------------- PRICING STYLE ELEMENT ---------------------------------------------------------*/	
+
+#pricing {
+	margin:30px 0 15px 0;
+    display: block;
+    float: left;
+    position: relative;
+    width: 100%;
+}
+#pricing .firstprice, #pricing .bestprice, #pricing .lastprice {
+    display: block;
+    float: left;
+    position: relative;
+    width: 33%;
+}
+#pricing .bestprice {
+    margin-top: -20px;
+    width: 34%;
+    z-index: 10;
+}
+#pricing .inner {
+    display: block;
+    text-align: center;
+}
+#pricing .bestprice .inner {
+    -moz-border-radius: 10px 10px 10px 10px;
+    -moz-box-shadow: 0 1px 10px #404040;
+}
+#pricing .firstprice .inner {
+    -moz-border-radius-bottomleft: 10px;
+    -moz-border-radius-topleft: 10px;
+}
+#pricing .lastprice .inner {
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-topright: 10px;
+}
+#pricing .price-title {
+    background: none repeat scroll 0 0 #0c0c0c;
+    color: #FBFBFB;
+    display: block;
+    font-size: 22px;
+    padding: 10px 0;
+    position: relative;
+}
+#pricing .firstprice .price-title {
+    -moz-border-radius-topleft: 10px;
+}
+#pricing .lastprice .price-title {
+    -moz-border-radius-topright: 10px;
+}
+#pricing .bestprice .price-title {
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    background: none repeat scroll 0 0 #bd36b2;
+    color: #fff;
+    display: block;
+    font-size: 25px;
+    overflow: hidden;
+    padding: 15px 0;
+}
+#pricing .price-buy {
+    background: none repeat scroll 0 0 #D3D3D3;
+    display: block;
+	color:#0a0a0a;
+	font-size:18px;
+    padding: 18px 0;
+}
+#pricing .firstprice .price-buy {
+    -moz-border-radius-bottomleft: 10px;
+}
+#pricing .lastprice .price-buy {
+    -moz-border-radius-bottomright: 10px;
+}
+#pricing .bestprice .price-buy {
+    -moz-border-radius-bottomleft: 10px;
+    -moz-border-radius-bottomright: 10px;
+    display: block;
+}
+#pricing .price-price {
+    background: none repeat scroll 0 0 #f8f8f8;
+    color: #0a0a0a;
+    display: block;
+    font-size: 40px;
+    padding: 15px 0;
+}
+#pricing .price-price span {
+    display: inline-block;
+    font-size: 20px;
+    vertical-align: top;
+}
+#pricing .bestprice .price-price {
+    background: none repeat scroll 0 0 #f9f9f9;
+    color: #0a0a0a;
+    display: block;
+    font-size: 55px;
+    padding: 20px 0;
+}
+#pricing .bestprice .price-price span {
+    display: inline-block;
+    font-size: 25px;
+    vertical-align: top;
+}
+#pricing .price-features {
+    background: none repeat scroll 0 0 #EAEAEA;
+    display: block;
+    font-size: 14px;
+    padding: 0 15px;
+}
+#pricing .price-features li {
+	color:#636363;
+	text-shadow:0 1px #fff;
+	font-size:14px;
+    border-top: 1px solid #D8D8D8;
+    padding: 15px 0;
+}
+#pricing .price-features li:first-child {
+    border-top: 0 none;
+}
+a.button-buy{
+	background:url('../images/pricing-table-button.png') no-repeat scroll 0 0;
+	line-height:18px;
+	width:200px;
+	display:inline-block;
+	font-size:18px;
+	padding:16px 0 16px 0;
+	color:#dddddd;
+}
+a.button-buy:hover{	
+	color:#fff;
+}
+.testimonial strong{/*WHAT OTHERS SAYS BAISC STYLE*/
+	float:right;
+	color:#636363;
+	text-shadow:0 1px #fff;
+	font-weight:700;
+	margin-right:20px;
+}
+/*--------------------------------------------------------- NEWS LETTER FORM STYLE ---------------------------------------------------------*/
+
+input{
+	-moz-border-radius:6px;
+	border-radius:6px;
+	width:239px;
+	padding:11px 0 11px 11px;
+	height:13px;
+	float:left;
+	margin:0 20px 0 0;
+	border:1px solid #fff;
+	background: #fff;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:13px;
+	color:#8f8c8c;
+}
+
+input.submit{
+	background:url('../images/submit.png') no-repeat transparent scroll 0 0;
+	width: 120px;
+	border:none;
+	display:inline-block;
+	height:35px;
+	cursor:pointer;
+}
+
+/*--------------------------------------------------------- END NEWS LETTER FORM STYLE ---------------------------------------------------------*/
+
+/*--------------------------------------------------------- SCREENSHOT FOR ITEM ---------------------------------------------------------*/	
+
+.screenshot-thumbs{
+	/*margin:5px 0 0 0;*/
+	margin-left:auto;
+	margin-right:auto;
+}
+ul.screenshot li{
+	float: left;
+	line-height: 0;
+  padding: 10px;
+}
+
+ul.screenshot li a img{ /*Thumbnail images for screenshot items*/
+	padding: 3px;
+	border: 1px solid #e3e3e3;
+}
+
+/*--------------------------------------------------------- FOOTER ---------------------------------------------------------*/
+
+.footer_background{
+	border-top:1px solid #fff;
+	background:url('../images/pattern-2.jpg');
+	padding:15px 0 15px 0;
+}
+
+.footer_copyright span{
+	color:#636363;
+	font-size:13px;
+	line-height:32px;
+	text-shadow:0 1px #fff;
+}
+
+/*Social Icons area*/
+ul.social {
+  margin-left:210px;
+}
+ul.social li{
+	display:inline-block;
+	margin:0 10px 0 0;
+}
+
+ul.social li img{
+	margin:0;
+}
+
+/*-- ADDED BY MATT --*/
+.mobile-site {
+  font-size:24px;
+  margin-right:20px;
+}
+
+.walkbyit-visual {
+  float:left;
+  height:37px;
+  width:161px;
+  background:url('../images/walkbyit-visual.png') no-repeat scroll 0 0 transparent;
+  margin-right:15px;
+}
+
+.extension-input {
+  width:45px;
+  font-size:15px;
+  border:solid 1px #eee;
+}
+.pin-input {
+  width:80px;
+  font-size:15px;
+  border:solid 1px #eee;
+}
+.point-label {
+  display:block;
+  padding-bottom:10px;
+  font-size:14px;
+  color:#bd36b2;
+}
+.point-labels {
+  display:block;
+  padding-left:55px;
+  padding-top:7px;
+  background:url('../images/bracket.png') no-repeat scroll 0 0 transparent;
+  width:28;
+  height:248;
+  margin-left:30px;
+}
+.step-graphic {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.support-icon{
+	background:url('../images/support-icon.png') no-repeat scroll 0 0 transparent;	
+}
+.support {
+  display:block;
+  text-align:center;
+}
+.support h3 {
+padding:10px 0 10px;
+}
+.support span {
+padding:15px;
+margin-top:15px;
+font-size:13px;
+}
+.error, .success {
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  width:270px;
+  margin:15px 0 15px 60px;
+  padding: 10px;
+  border:1px solid;
+}
+.error {
+  color: #D8000C;
+  background-color: #FFBABA;
+}
+.success {
+  color: #4F8A10;
+  background-color: #DFF2BF;
+}

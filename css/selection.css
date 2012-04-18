@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	outline : none;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin : 0;
+	padding : 0;
+	border : 0;
+	outline : 0;
+	font-size : 100%;
+	vertical-align : baseline;
+	background : transparent;
+}
+ul {
+	list-style : none;
+}
+li{
+	list-style:none;	
+}
+a, a:hover {
+	outline : none;
+	text-decoration : none;
+}
+img {
+	border : none;
+}
+body{
+	background:#f1f1f1 url('file:///C|/xampp/htdocs/lander - TF/images/pattern1.jpg');
+	font-family:Arial, Helvetica, sans-serif;
+	line-height:1.7;
+	font-size:13px;
+	font-weight:normal;
+}
+.header_top_background{
+	background:#272727 url('../images/header_pattern.jpg');
+	padding:30px 0 30px 0;
+	margin:0 0 30px 0;
+	border-bottom:1px solid #fff;
+}
+h1 a{
+	background:url('../images/logo.png') no-repeat scroll 0 0 transparent;/*LOGO IMG URL*/
+	display:block;
+	text-indent:-9999px;
+	width:259px;
+	height:44px;
+}
+h2{
+	font-size:50px;
+	color:#0a0a0a;
+	margin:0 0 30px 0;
+	text-shadow:0 1px #fff;	
+}
+h2 span{
+	color:#1a8bc6;	
+}
+ul.selection li{
+	float: left;
+	line-height: 0;
+	margin: 0 10px 0 0;
+}
+
+ul.selection li a img{ /*Thumbnail images for screenshot items*/
+	padding: 3px;
+	border: 1px solid #dddddd;
+}
+ul.selection li a:hover{
+	opacity:0.6;	
+}
+.cntdivider{
+	margin: 15px 0 15px 0;
+	height:0;	
+	border-top: 1px solid #f2f2f2;
+	border-bottom: 1px solid #fff;
+}
+h3{
+	font-size:30px;
+	color:#0a0a0a;
+	margin:30px 0 15px 0;
+	text-shadow:0 1px #fff;	
+}
+h3 span{	
+color:#1a8bc6;
+}
